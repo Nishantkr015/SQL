@@ -1,0 +1,27 @@
+CREATE DATABASE school;
+-------------------> press Enter
+SHOW DATABASES; 
+-------------------> press Enter
+  mysql> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| school             |
+| student            |
+| sys                |
+| teacher            |
++--------------------+
+
+USE school;
+-------------------> press Enter
+
+CREATE TABLE course (cid INT, cname VARCHAR, cteacher VARCHAR);
+-------------------> press Enter
+INSERT INTO course (cid, cname, cteacher) VALUES (1, "Matha", "Nishant"), (2, "Hindi","Rohan");
+-------------------> press Enter
+
+SELECT cid FROM course;
+SELECT *FROM course;
